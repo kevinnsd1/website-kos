@@ -15,7 +15,7 @@ export const GarageShowcase = () => {
         transition={{ duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
         className="double-bezel-shell group"
       >
-        <div className="double-bezel-core relative bg-zinc-900 p-8 md:p-16 h-[500px] md:h-[600px] flex flex-col justify-end overflow-hidden">
+        <div className="double-bezel-core relative bg-zinc-900 p-8 md:p-16 h-[400px] sm:h-[500px] md:h-[600px] flex flex-col justify-end overflow-hidden">
           <div className="absolute inset-0 w-full h-full">
             <img 
               src={garageImg} 

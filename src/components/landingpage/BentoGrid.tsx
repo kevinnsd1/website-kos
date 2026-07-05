@@ -9,7 +9,7 @@ export const BentoGrid = () => {
   
   return (
     <section id="features" className="pt-24 pb-12 md:pt-40 md:pb-20 px-4 md:px-8 max-w-[1400px] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px] md:auto-rows-[400px]">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[minmax(350px,auto)] md:auto-rows-[400px]">
         
         {/* Card 1: RFID Door (Span 8) */}
         <motion.div 

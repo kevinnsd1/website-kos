@@ -6,10 +6,10 @@ export const Hero = () => {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative min-h-[100dvh] pt-24 px-4 md:px-8 max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-12 items-center gap-6">
+    <section className="relative min-h-[100dvh] pt-32 pb-20 md:pt-24 md:pb-0 px-4 md:px-8 max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-12 items-center gap-12 md:gap-6">
       {/* Left Typography */}
       <div className="col-span-1 md:col-span-8 flex flex-col items-start z-10 mt-12 md:mt-0 pr-0 md:pr-12">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[1.05] font-medium mb-6">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter leading-[1.05] font-medium mb-6">
           Lebih dari sekadar
           <br />
           <span className="italic">tempat tinggal.</span>
@@ -27,12 +27,12 @@ export const Hero = () => {
         </button>
       </div>
 
-      <div className="col-span-1 md:col-span-4 flex justify-center md:justify-center mt-12 md:mt-0 relative">
+      <div className="col-span-1 md:col-span-4 flex justify-center md:justify-center relative">
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.32, 0.72, 0, 1], delay: 0.2 }}
-          className="w-full max-w-[340px] aspect-[9/16] double-bezel-shell"
+          className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px] aspect-[9/16] double-bezel-shell"
         >
           <div className="double-bezel-core">
             <video
