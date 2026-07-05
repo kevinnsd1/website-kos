@@ -30,8 +30,8 @@ export const Hero = () => {
 
       <div className="col-span-1 md:col-span-4 flex justify-center md:justify-center mt-12 md:mt-0 relative">
         <motion.div
-          initial={reduce ? false : { opacity: 0, y: 40, filter: "blur(10px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          initial={reduce ? false : { opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.32, 0.72, 0, 1], delay: 0.2 }}
           className="w-full max-w-[340px] aspect-[9/16] double-bezel-shell"
         >

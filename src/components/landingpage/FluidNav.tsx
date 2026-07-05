@@ -44,17 +44,22 @@ export const FluidNav = () => {
         }`}
       >
         <div className="flex flex-col items-center justify-center min-h-[100dvh] space-y-8">
-          {['Kamar', 'Fasilitas', 'Lokasi', 'Kontak'].map((item, i) => (
+          {[
+            { label: 'Kamar', href: '#catalog' },
+            { label: 'Fasilitas', href: '#features' },
+            { label: 'Lokasi', href: '#lokasi' },
+            { label: 'Kontak', href: '#kontak' }
+          ].map((item, i) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               onClick={() => setIsOpen(false)}
               className={`text-4xl md:text-6xl font-medium text-white tracking-tight custom-ease transition-all duration-700 hover:text-white/70 ${
                 isOpen ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
               }`}
               style={{ transitionDelay: isOpen ? `${100 + i * 50}ms` : '0ms' }}
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>

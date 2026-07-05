@@ -23,7 +23,7 @@ export const ScrollRevealStagger = () => {
   ];
 
   return (
-    <section className="py-24 md:py-40 px-4 md:px-8 max-w-[1400px] mx-auto">
+    <section className="pt-12 pb-12 md:pt-20 md:pb-16 px-4 md:px-8 max-w-[1400px] mx-auto">
       <div className="flex flex-col md:flex-row gap-16 md:gap-8">
         <div className="w-full md:w-1/2">
            <h2 className="text-4xl md:text-6xl font-medium tracking-tighter mb-6">
@@ -35,8 +35,8 @@ export const ScrollRevealStagger = () => {
             {steps.map((step, i) => (
               <motion.li
                 key={step.title}
-                initial={reduce ? false : { opacity: 0, y: 32, filter: 'blur(4px)' }}
-                whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                initial={reduce ? false : { opacity: 0, y: 32 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.4 }}
                 transition={{
                   duration: 0.8,

@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <footer className="py-24 md:py-40 px-4 md:px-8 max-w-[1400px] mx-auto flex flex-col items-center justify-center text-center">
+    <footer className="pt-12 pb-24 md:pt-16 md:pb-32 px-4 md:px-8 max-w-[1400px] mx-auto flex flex-col items-center justify-center text-center">
       <h2 className="text-6xl md:text-9xl font-medium tracking-tighter mb-12">
         KOS.
       </h2>

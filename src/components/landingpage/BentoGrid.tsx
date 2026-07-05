@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import { ShieldCheck, WashingMachine, Wallet, HouseLine } from '@phosphor-icons/react';
+import smartDoor from '../../assets/landingpage/room/smartdoor.png';
+import laundryImg from '../../assets/landingpage/laundry/laundry.png';
 
 export const BentoGrid = () => {
   const reduce = useReducedMotion();
   
   return (
-    <section id="features" className="py-24 md:py-40 px-4 md:px-8 max-w-[1400px] mx-auto">
+    <section id="features" className="pt-24 pb-12 md:pt-40 md:pb-20 px-4 md:px-8 max-w-[1400px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px] md:auto-rows-[400px]">
         
         {/* Card 1: RFID Door (Span 8) */}
@@ -29,9 +31,9 @@ export const BentoGrid = () => {
             </div>
             <div className="absolute right-0 bottom-0 w-full md:w-3/5 h-1/2 md:h-full">
               <img 
-                src="https://picsum.photos/seed/door-lock-rfid/800/800" 
+                src={smartDoor} 
                 alt="Sleek RFID door lock" 
-                className="w-full h-full object-cover opacity-80 mix-blend-multiply dark:mix-blend-screen group-hover:scale-105 custom-ease transition-transform duration-1000"
+                className="w-full h-full object-cover object-[80%_center] opacity-80 mix-blend-multiply dark:mix-blend-screen group-hover:scale-105 custom-ease transition-transform duration-1000"
               />
             </div>
           </div>
@@ -96,7 +98,7 @@ export const BentoGrid = () => {
             </div>
             <div className="absolute right-0 bottom-0 w-[60%] h-full">
               <img 
-                src="https://picsum.photos/seed/clean-laundry-machine/600/800" 
+                src={laundryImg} 
                 alt="Minimalist washing machine" 
                 className="w-full h-full object-cover opacity-60 mix-blend-multiply dark:mix-blend-screen group-hover:scale-105 custom-ease transition-transform duration-1000"
               />
