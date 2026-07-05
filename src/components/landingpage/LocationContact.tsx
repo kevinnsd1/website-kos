@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import { MapPin, Phone, EnvelopeSimple, WhatsappLogo } from '@phosphor-icons/react';
+import { MapPin, EnvelopeSimple, WhatsappLogo } from '@phosphor-icons/react';
 
 export const LocationContact = () => {
   const reduce = useReducedMotion();

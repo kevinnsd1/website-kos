@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion, useReducedMotion } from 'motion/react';
 import { Car } from '@phosphor-icons/react';
 import garageImg from '../../assets/landingpage/outdoor/garage/garage.jpg';

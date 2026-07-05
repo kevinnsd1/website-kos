@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useReducedMotion } from 'motion/react';
+import { useState, useEffect } from 'react';
+
 import { List, X } from '@phosphor-icons/react';
 
 export const FluidNav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const reduce = useReducedMotion();
 
   // Disable scroll when menu is open
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion, useReducedMotion } from 'motion/react';
 import { Users, HandSwipeRight, AppWindow } from '@phosphor-icons/react';
 

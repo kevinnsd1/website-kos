@@ -1,6 +1,5 @@
-import React from "react";
 import { motion, useReducedMotion } from "motion/react";
-import { ArrowUpRight, MapPin, Sparkle } from "@phosphor-icons/react";
+import { ArrowUpRight } from "@phosphor-icons/react";
 import kosanVideo from "../../assets/landingpage/room/kosan.mp4";
 
 export const Hero = () => {

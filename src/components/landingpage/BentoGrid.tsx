@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion, useReducedMotion } from 'motion/react';
 import { ShieldCheck, WashingMachine, Wallet, HouseLine } from '@phosphor-icons/react';
 import smartDoor from '../../assets/landingpage/room/smartdoor.png';

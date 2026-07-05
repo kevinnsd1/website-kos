@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FluidNav } from '../components/landingpage/FluidNav';
 import { Hero } from '../components/landingpage/Hero';
 import { BentoGrid } from '../components/landingpage/BentoGrid';

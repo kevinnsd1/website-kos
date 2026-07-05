@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion, useReducedMotion } from 'motion/react';
 import roomStandard from '../../assets/landingpage/room/katalog/room.png';
 import room2 from '../../assets/landingpage/room/katalog/room2.png';
