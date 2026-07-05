@@ -120,11 +120,27 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    }
+  }
   body {
-    @apply bg-background text-foreground;
-    }
+    @apply bg-background text-foreground antialiased;
+    background-color: #FDFBF7;
+  }
+  .dark body {
+    background-color: #050505;
+  }
   html {
     @apply font-sans;
-    }
+  }
+}
+
+@utility double-bezel-shell {
+  @apply relative p-1.5 rounded-[2rem] bg-black/5 dark:bg-white/5 ring-1 ring-black/5 dark:ring-white/10;
+}
+
+@utility double-bezel-core {
+  @apply relative w-full h-full rounded-[calc(2rem-0.375rem)] bg-white dark:bg-zinc-950 overflow-hidden shadow-[inset_0_2px_4px_rgba(255,255,255,0.8)] dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)];
+}
+
+@utility custom-ease {
+  transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
 }
